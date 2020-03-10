@@ -47,9 +47,10 @@ class WebDriverFactory():
             driver = webdriver.Firefox()
         elif self.browser == "chrome":
             # Set chrome driver
-            chromedriver = "/Users/atomar/Documents/workspace_personal/selenium/chromedriver"
-            os.environ["webdriver.chrome.driver"] = chromedriver
-            driver = webdriver.Chrome(chromedriver)
+            #chromedriver = "/Users/atomar/Documents/workspace_personal/selenium/chromedriver"
+            #os.environ["webdriver.chrome.driver"] = chromedriver
+            #driver = webdriver.Chrome(chromedriver)
+            driver = webdriver.Chrome()
             driver.set_window_size(1440, 900)
         else:
             driver = webdriver.Firefox()
